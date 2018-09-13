@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<usuarios nmrDeUsuarios="2">
+<usuarios nmrDeUsuarios="5">
     <usuario id="11548825" nome="Fausto Silva" nmrDeAcessos="2">
     </usuario>
     <usuario id="17104935" nome="Otávio Parraga" nmrDeAcessos="3">
+    </usuario>
+    <usuario id="77852955" nome="Adriano Imperador" nmrDeAcessos="5">
+    </usuario>
+    <usuario id="558969365" nome="João Kleber" nmrDeAcessos="1">
+    </usuario>
+    <usuario id="55698896" nome="João Kleber" nmrDeAcessos="1">
     </usuario>
 </usuarios>

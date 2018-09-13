@@ -1,12 +1,12 @@
-function sendData(points, partialPoints, win, errors, level, challengeId, size, end){
+function sendData(points, partialPoints, win, errors, level, challengeId, size, end) {
     var info = {};
     var path;
-    if(window.location.hostname == "localhost" ){   // for localhost tests
+    if (window.location.hostname == "localhost") {   // for localhost tests
         path = "/exported-resource/saveStats"
-    }else {                                 // for web version in production, electron and crosswalk versions
+    } else {                                 // for web version in production, electron and crosswalk versions
         path = "http://remar.dc.ufscar.br/exported-resource/saveStats"
     }
-    $.getJSON("remar.json", function(json) {
+    $.getJSON("remar.json", function (json) {
         info.exportedResourceId = json.exportedResourceId;
         info.points = points.toFixed(0);
         info.partialPoints = partialPoints.toFixed(0);
@@ -22,7 +22,7 @@ function sendData(points, partialPoints, win, errors, level, challengeId, size, 
             type: "POST",
             url: path,
             data: info,
-            success: function(data) {
+            success: function (data) {
             }
         })
     });
