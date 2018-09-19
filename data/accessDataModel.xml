@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<acessos>
+    <acesso idUsuario="" tempoNoObjeto="" nmrDeAcertos="">
+        <tentativa>
+            <questao certa="">
+                <pergunta>
+                </perugnta>
+                <resposta>
+                </resposta>
+            </questao>
+        </tentativa>
+    </acesso>
+</acessos>

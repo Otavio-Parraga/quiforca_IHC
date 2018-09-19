@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<usuarios nmrDeUsuarios="5">
+<usuarios nmrDeUsuarios="6">
     <usuario id="11548825" nome="Fausto Silva" nmrDeAcessos="2">
     </usuario>
     <usuario id="17104935" nome="Otávio Parraga" nmrDeAcessos="3">
@@ -10,4 +10,5 @@
     </usuario>
     <usuario id="55698896" nome="João Kleber" nmrDeAcessos="1">
     </usuario>
-</usuarios>
+<usuario id="78453265" nome="Vitinho Avassalador" nmrDeAcessos="1">
+</usuario></usuarios>

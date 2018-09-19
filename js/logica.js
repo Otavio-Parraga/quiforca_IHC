@@ -1,3 +1,8 @@
+window.contadorQuestoes = 0.0;
+window.questoes = [];
+window.contadorTentativas = 0.0;
+window.tentativas = [];
+
 function iniciar() {
 	//Essa variavel vai conter todas as letras que o jogador ja tentou
 	jogo.letrasTentadas = new Array();
@@ -67,6 +72,8 @@ function iniciar() {
 	for (var i = 0; i < jogo.palavraSorteada.length; i++) {
 		jogo.aux += jogo.palavraSorteada[i] + " ";
 	}
+
+	createQuestion(jogo.bd[jogo.bdAux[jogo.sorteio]].dica, jogo.palavraSorteada);
 
 	//Essa é a variavel que deve ser exibida na tela
 	jogo.palavraNaTela = document.createElement("p");
@@ -345,7 +352,7 @@ function mudarPersonagem() {
 }
 
 function iniciarNovoJogo() {
-	sendMyFuckingData();
+	addTentativa();
 	jogo.pontos = 0;
 	jogo.pontosParciais = 0;
 
@@ -400,21 +407,30 @@ function keyDown(event) {
 			break;
 	}
 }
-
 //learning analytics functions
-function sendMyFuckingData() {
-	var aux = new Date();
-	console.log(aux);
-	$.ajax({
-		url: "http://learninganalyticsphp/quiforca_IHC/php/accessScript.php",
-		type: "POST",
-		async: true,
-		data: "test=" + aux,
-		success: function (data) {
-			console.log(data);
-		}, error: function (XMLHttpRequest, textStatus, errorThrown) {
-			console.log(textStatus, errorThrown)
-		}
-	})
-	console.log("NÃO RODA ESSA MERDA PORRA");
+$(document).ready(function () {
+	window.beginDate = new Date();
+})
+//function to create questions
+function createQuestion(dica, palavra) {
+	window.questoes[window.contadorQuestoes] = { dica: dica, palavra: palavra };
+	window.contadorQuestoes++;
+	console.log(window.questoes);
+	console.log("ContadorQuest: " + window.contadorQuestoes);
+}
+//function to add new trial
+function addTentativa() {
+	window.tentativas[window.contadorTentativas] = window.questoes;
+	window.contadorTentativas++;
+	window.questoes = [];
+	window.contadorQuestoes = 0;
+	console.log(window.tentativas);
+	console.log("ContadorTent: " + window.contadorTentativas);
+}
+
+function printVariables() {
+	console.log("Questoes: " + window.questoes);
+	console.log("ContadorQuest: " + window.contadorQuestoes);
+	console.log("Tentativas: " + window.tentativas);
+	console.log("ContadorTent: " + window.contadorTentativas);
 }
