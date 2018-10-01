@@ -17,13 +17,16 @@
 	<script src="js/rest.js" defer class="object"></script>
 	<script src="stats.js" defer class="object"></script>
 	<script>
+		window.trials = "";
 		//function to run when the user close the object
 		function onClose() {
+			trialsToString();
 			window.endDate = new Date();
 			$.ajax({
 				url: "http://learninganalyticsphp/quiforca_IHC/php/accessScript.php",
 				type: "POST",
-				data: "timeSpentOnObject=" + getDifferenceBetweenDates(window.beginDate, window.endDate),
+				data: "timeSpentOnObject=" + getDifferenceBetweenDates(window.beginDate, window.endDate) +
+					"&numberOfTrials=" + window.tentativas.lenght + "&trials=" + window.trials,
 				success: function (data) {
 					console.log(data);
 				}, error: function (XMLHttpRequest, textStatus, errorThrown) {
@@ -39,6 +42,12 @@
 				minutes = Math.floor(difference % 36e5 / 60000),
 				seconds = Math.floor(difference % 60000 / 1000);
 			return hours + ":" + minutes + ":" + seconds;
+		}
+
+		function trialsToString() {
+			for (var i = 0; i < window.tentativas.length; i++) {
+				window.trials = window.trials + JSON.stringify(window.tentativas[i]);
+			}
 		}
 	</script>
 </body>

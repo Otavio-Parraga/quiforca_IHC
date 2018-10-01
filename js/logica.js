@@ -415,8 +415,9 @@ $(document).ready(function () {
 function createQuestion(dica, palavra) {
 	window.questoes[window.contadorQuestoes] = { dica: dica, palavra: palavra };
 	window.contadorQuestoes++;
-	console.log(window.questoes);
-	console.log("ContadorQuest: " + window.contadorQuestoes);
+	console.log(window.trials);
+	//console.log(window.questoes);
+	//console.log("ContadorQuest: " + window.contadorQuestoes);
 }
 //function to add new trial
 function addTentativa() {
@@ -424,13 +425,13 @@ function addTentativa() {
 	window.contadorTentativas++;
 	window.questoes = [];
 	window.contadorQuestoes = 0;
-	console.log(window.tentativas);
-	console.log("ContadorTent: " + window.contadorTentativas);
+	//console.log(window.tentativas);
+	//console.log("ContadorTent: " + window.contadorTentativas);
 }
 
 function printVariables() {
-	console.log("Questoes: " + window.questoes);
+	console.log("Questoes: " + JSON.stringify(window.questoes));
 	console.log("ContadorQuest: " + window.contadorQuestoes);
-	console.log("Tentativas: " + window.tentativas);
+	console.log("Tentativas: " + JSON.stringify(window.tentativas));
 	console.log("ContadorTent: " + window.contadorTentativas);
 }

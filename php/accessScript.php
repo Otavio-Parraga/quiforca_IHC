@@ -1,6 +1,7 @@
 <?php
 session_start();
 $archive = fopen("../data/test.txt", "a+");
-fwrite($archive, "Esse foi mais um acesso de " . $_SESSION['name'] . "\n");
-fwrite($archive, "Tempo gsto no objeto: " . $_POST['timeSpentOnObject']);
+fwrite($archive, "Nome: " . $_SESSION["name"] . "\n");
+fwrite($archive, "Matricula: " . $_SESSION["userId"] . "\n");
+fwrite($archive, "Desempenho: " . $_POST['trials'] . "\n");
 fclose($archive);
