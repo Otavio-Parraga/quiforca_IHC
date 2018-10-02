@@ -23,7 +23,7 @@
 			trialsToString();
 			window.endDate = new Date();
 			$.ajax({
-				url: "http://learninganalyticsphp/quiforca_IHC/php/accessScript.php",
+				url: "./php/accessScript.php",
 				type: "POST",
 				data: "timeSpentOnObject=" + getDifferenceBetweenDates(window.beginDate, window.endDate) +
 					"&numberOfTrials=" + window.tentativas.lenght + "&trials=" + window.trials,

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<acessos>
+<acessos tempoTotalNoObjeto="">
     <acesso idUsuario="" tempoNoObjeto="" nmrDeAcertos="">
         <tentativa>
-            <questao certa="">
+            <questao concluida="">
                 <pergunta>
                 </perugnta>
                 <resposta>
