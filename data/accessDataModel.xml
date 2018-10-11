@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <acessos tempoTotalNoObjeto="">
-    <acesso idUsuario="" tempoNoObjeto="" nmrDeAcertos="">
-        <tentativa>
-            <questao concluida="">
+    <acesso idUsuario="" tempoNoObjeto="">
+        <tentativa nmrTentativa="">
+            <questao>
                 <pergunta>
                 </perugnta>
                 <resposta>
@@ -11,3 +11,4 @@
         </tentativa>
     </acesso>
 </acessos>
+

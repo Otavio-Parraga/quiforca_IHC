@@ -7,7 +7,6 @@ $path = simplexml_load_file("../data/userData.xml");
 $xml = new SimpleXMLElement($path->asXML());
 
 //IF THE USER ALREADY HAVE AN ACCOUNT
-
 $actualUser = null;
 foreach ($xml->children() as $user) {
     if ($user["id"] == $_SESSION['userId']) {
