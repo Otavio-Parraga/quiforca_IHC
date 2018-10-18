@@ -25,8 +25,7 @@
 			$.ajax({
 				url: "./php/accessScript.php",
 				type: "POST",
-				data: "timeSpentOnObject=" + getDifferenceBetweenDates(window.beginDate, window.endDate) +
-					"&numberOfTrials=" + window.tentativas.lenght + "&trials=" + window.trials,
+				data: "timeSpentOnObject=" + getDifferenceBetweenDates(window.beginDate, window.endDate),
 				success: function (data) {
 					console.log(data);
 				}, error: function (XMLHttpRequest, textStatus, errorThrown) {

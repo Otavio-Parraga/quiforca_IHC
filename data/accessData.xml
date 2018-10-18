@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <acessos tempoTotalNoObjeto="">
-    <acesso idUsuario="" tempoNoObjeto="" nmrDeAcertos="">
-        <tentativa>
+    <acesso idUsuario="" tempoNoObjeto="">
+        <tentativa nmrTentativa="">
             <questao concluida="">
-                <pergunta>
-                </pergunta>
-                <resposta>
-                </resposta>
+                <dica>
+                </dica>
+                <palavra>
+                </palavra>
             </questao>
         </tentativa>
     </acesso>
     <acesso idUsuario="19827387" tempoNoObjeto="0:0:46"/>
     <acesso idUsuario="19827387" tempoNoObjeto="0:0:27"/>
     <acesso idUsuario="19827387" tempoNoObjeto="0:0:34"/>
-</acessos>
+    <acesso idUsuario="19827387" tempoNoObjeto="0:0:1"/>
+    <acesso idUsuario="19827387" tempoNoObjeto="0:1:3"/>
+    <acesso idUsuario="19827387" tempoNoObjeto="0:0:0"/>
+    <acesso idUsuario="19827387" tempoNoObjeto="0:11:50"/>
+    <acesso idUsuario="19827387" tempoNoObjeto="0:1:13"/>
+    <acesso idUsuario="19827387" tempoNoObjeto="0:19:43"/>
+    <acesso idUsuario="19827387" tempoNoObjeto="0:0:15"/>
+    <acesso idUsuario="19827387" tempoNoObjeto="0:1:8"/>
+    <acesso idUsuario="19827387" tempoNoObjeto="0:8:58"/>
+    <acesso idUsuario="19827387" tempoNoObjeto="0:1:52"/>
+    <acesso idUsuario="19827387" tempoNoObjeto="0:0:2"/>
+    <acesso idUsuario="19827387" tempoNoObjeto="0:19:23"/>
+    <acesso idUsuario="19827387" tempoNoObjeto="0:0:45"/>
+    <acesso idUsuario="19827387" tempoNoObjeto="0:0:4"/>
+<acesso idUsuario="19827387" tempoNoObjeto="0:7:21"/><acesso idUsuario="19827387" tempoNoObjeto="0:0:11"/><acesso idUsuario="19827387" tempoNoObjeto="0:2:27"/></acessos>

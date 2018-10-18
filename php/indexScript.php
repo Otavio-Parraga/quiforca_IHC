@@ -1,4 +1,5 @@
 <?php
+//-------------------------SCRIPT TO CREATE THE USERS'S DATA
 //create session
 session_start();
 $_SESSION['name'] = validateData($_POST['name']);

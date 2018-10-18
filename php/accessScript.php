@@ -10,8 +10,6 @@ $path = simplexml_load_file("../data/accessData.xml");
 $xml = new SimpleXMLElement($path->asXML());
 $userId = $_SESSION['userId'];
 $timeOnObject = validateData($_POST['timeSpentOnObject']);
-$trials = $_POST['trials'];
-$numberOfTrials = $_POST['numberOfTrials'];
  
 //set new access
 $xml->addChild('acesso');
@@ -36,10 +34,10 @@ fclose($archive);
 
 
 // print in the test file
-$archive = fopen("../data/test.txt", "a+");
-fwrite($archive, $trials);
-include "./objectScripts.php";
-fclose($archive);
+//$archive = fopen("../data/test.txt", "a+");
+//fwrite($archive, $trials);
+//include "./objectScripts.php";
+//fclose($archive);
 
 //function to validate data
 function validateData($data)

@@ -75,6 +75,7 @@ function iniciar() {
 
 	createQuestion(jogo.bd[jogo.bdAux[jogo.sorteio]].dica, jogo.palavraSorteada);
 
+
 	//Essa é a variavel que deve ser exibida na tela
 	jogo.palavraNaTela = document.createElement("p");
 	jogo.palavraNaTela.setAttribute("id", "palavraNaTela");
@@ -105,6 +106,16 @@ function update() {
 			setTimeout(update, 50);
 			break;
 		case 0:
+		$.ajax({
+			url: "../php/endTrialScript.php",
+			type: "POST",
+			data: "",
+			success: function (data) {
+				console.log(data);
+			}, error: function (XMLHttpRequest, textStatus, errorThrown) {
+				console.log(textStatus, errorThrown)
+			}
+		})
 			//Fim de jogo: jogador perdeu
 			jogo.palavraNaTela.innerHTML = jogo.palavraSorteada;
 			aux = 5 * Math.pow(0.8, jogo.erros);
@@ -416,6 +427,16 @@ function createQuestion(dica, palavra) {
 	window.questoes[window.contadorQuestoes] = { dica: dica, palavra: palavra };
 	window.contadorQuestoes++;
 	console.log(window.trials);
+	$.ajax({
+		url: "../php/questionsScript.php",
+		type: "POST",
+		data: "dica=" + dica + "&palavra=" + palavra,
+		success: function (data) {
+			console.log(data);
+		}, error: function (XMLHttpRequest, textStatus, errorThrown) {
+			console.log(textStatus, errorThrown)
+		}
+	})
 	//console.log(window.questoes);
 	//console.log("ContadorQuest: " + window.contadorQuestoes);
 }
@@ -425,6 +446,16 @@ function addTentativa() {
 	window.contadorTentativas++;
 	window.questoes = [];
 	window.contadorQuestoes = 0;
+	$.ajax({
+		url: "../php/trialsScript.php",
+		type: "POST",
+		data: "",
+		success: function (data) {
+			console.log(data);
+		}, error: function (XMLHttpRequest, textStatus, errorThrown) {
+			console.log(textStatus, errorThrown)
+		}
+	})
 	//console.log(window.tentativas);
 	//console.log("ContadorTent: " + window.contadorTentativas);
 }
