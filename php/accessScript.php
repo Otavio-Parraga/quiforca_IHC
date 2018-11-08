@@ -1,13 +1,13 @@
 <?php
 /*
--Definir metodo para criar uma nova tetativa
-    Lembrar que a primeira não conta, no caso a da posição 0
--Definir metodo para criar uma nova questao
--Definir metodo para inserir os atributos do acesso
--Definir metodo para fazer a media de tempo total
+-Inserir tentativas
+-Limpar cache do auxData.xml
+-Definir metodo para fazer a media de tempo total 
  */
 $path = simplexml_load_file("../data/accessData.xml");
 $xml = new SimpleXMLElement($path->asXML());
+$pathAux = simplexml_load_file("../data/auxData.xml");
+$xmlAux = new SimpleXMLElement($pathAux->asXML());
 $userId = $_SESSION['userId'];
 $timeOnObject = validateData($_POST['timeSpentOnObject']);
  
@@ -20,11 +20,17 @@ $xml->attributes()->nmrAcessos = $nmrAcessos;
 $actualAccess = $xml->acesso[$nmrAcessos - 1];
 
 //set the number of trials
+$trials = $xmlAux->children();
+foreach ($trials as $actualTrial) {
+    $actualAccess->addChild($actualTrial);
+}
 
 
 //create access attributes
 $actualAccess->addAttribute("idUsuario", $userId);
 $actualAccess->addAttribute("tempoNoObjeto", $timeOnObject);
+
+
 
 //save the file
 $archive = fopen("../data/accessData.xml", "w");

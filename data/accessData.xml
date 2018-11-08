@@ -1,30 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<acessos tempoTotalNoObjeto="">
-    <acesso idUsuario="" tempoNoObjeto="">
-        <tentativa nmrTentativa="">
-            <questao concluida="">
-                <dica>
-                </dica>
-                <palavra>
-                </palavra>
-            </questao>
-        </tentativa>
-    </acesso>
+<acessos mediaTempoTotalNoObjeto="">
     <acesso idUsuario="19827387" tempoNoObjeto="0:0:46"/>
-    <acesso idUsuario="19827387" tempoNoObjeto="0:0:27"/>
-    <acesso idUsuario="19827387" tempoNoObjeto="0:0:34"/>
-    <acesso idUsuario="19827387" tempoNoObjeto="0:0:1"/>
-    <acesso idUsuario="19827387" tempoNoObjeto="0:1:3"/>
-    <acesso idUsuario="19827387" tempoNoObjeto="0:0:0"/>
-    <acesso idUsuario="19827387" tempoNoObjeto="0:11:50"/>
-    <acesso idUsuario="19827387" tempoNoObjeto="0:1:13"/>
-    <acesso idUsuario="19827387" tempoNoObjeto="0:19:43"/>
-    <acesso idUsuario="19827387" tempoNoObjeto="0:0:15"/>
-    <acesso idUsuario="19827387" tempoNoObjeto="0:1:8"/>
-    <acesso idUsuario="19827387" tempoNoObjeto="0:8:58"/>
-    <acesso idUsuario="19827387" tempoNoObjeto="0:1:52"/>
-    <acesso idUsuario="19827387" tempoNoObjeto="0:0:2"/>
-    <acesso idUsuario="19827387" tempoNoObjeto="0:19:23"/>
-    <acesso idUsuario="19827387" tempoNoObjeto="0:0:45"/>
-    <acesso idUsuario="19827387" tempoNoObjeto="0:0:4"/>
-<acesso idUsuario="19827387" tempoNoObjeto="0:7:21"/><acesso idUsuario="19827387" tempoNoObjeto="0:0:11"/><acesso idUsuario="19827387" tempoNoObjeto="0:2:27"/></acessos>
+    <acesso idUsuario="19827387" tempoNoObjeto="0:22:1">
+    </acesso>
+    <acesso idUsuario="17104878" tempoNoObjeto="0:0:27"/>
+    <acesso idUsuario="12131415" tempoNoObjeto="0:2:21"/>
+    <acesso idUsuario="12131415" tempoNoObjeto="0:0:47">
+        <tentativas>
+            <tentativa>
+                <questao concluida="sim">
+                    <dica>Qualquer “coisa” que significa algo para alguém em determinada circunstância.</dica>
+                    <palavra>SIGNO</palavra>
+                </questao>
+                <questao concluida="sim">
+                    <dica>Como é chamado o método de investigação que permite coletar rapidamente dados de muitos usuários?</dica>
+                    <palavra>QUESTIONARIO</palavra>
+                </questao>
+                <questao concluida="sim">
+                    <dica>Pesquisa inicial para identificar necessidades dos usuários e oportunidades de melhoria</dica>
+                    <palavra>ELICITAÇÃO</palavra>
+                </questao>
+                <questao concluida="nao">
+                    <dica>Um personagem fictício, modelo hipotético de um grupo de usuários reais.</dica>
+                    <palavra>PERSONA</palavra>
+                </questao>
+            </tentativa>
+            <tentativa>
+                <questao concluida="sim">
+                    <dica>Uma narrativa textual de uma situação de uso da aplicação.</dica>
+                    <palavra>CENÁRIOS</palavra>
+                </questao>
+                <questao concluida="sim">
+                    <dica>Qual é o teste que tem como objetivo medir quantitativamente o desempenho de um sistema com relação a determinados critérios?</dica>
+                    <palavra>USABILIDADE</palavra>
+                </questao>
+                <questao concluida="nao">
+                    <dica>Qualquer “coisa” que significa algo para alguém em determinada circunstância.</dica>
+                    <palavra>SIGNO</palavra>
+                </questao>
+            </tentativa>
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="17104935" tempoNoObjeto="0:0:7"/>
+    <acesso idUsuario="17104878" tempoNoObjeto="0:0:54">
+        <tentativas>
+            <tentativa>
+                <questao concluida="sim">
+                    <dica>Qualquer “coisa” que significa algo para alguém em determinada circunstância.</dica>
+                    <palavra>SIGNO</palavra>
+                </questao>
+                <questao concluida="sim">
+                    <dica>Como é chamado o método de investigação que permite coletar rapidamente dados de muitos usuários?</dica>
+                    <palavra>QUESTIONARIO</palavra>
+                </questao>
+                <questao concluida="sim">
+                    <dica>Pesquisa inicial para identificar necessidades dos usuários e oportunidades de melhoria</dica>
+                    <palavra>ELICITAÇÃO</palavra>
+                </questao>
+                <questao concluida="nao">
+                    <dica>Um personagem fictício, modelo hipotético de um grupo de usuários reais.</dica>
+                    <palavra>PERSONA</palavra>
+                </questao>
+            </tentativa>
+            <tentativa>
+                <questao concluida="sim">
+                    <dica>Uma narrativa textual de uma situação de uso da aplicação.</dica>
+                    <palavra>CENÁRIOS</palavra>
+                </questao>
+                <questao concluida="sim">
+                    <dica>Qual é o teste que tem como objetivo medir quantitativamente o desempenho de um sistema com relação a determinados critérios?</dica>
+                    <palavra>USABILIDADE</palavra>
+                </questao>
+                <questao concluida="nao">
+                    <dica>Qualquer “coisa” que significa algo para alguém em determinada circunstância.</dica>
+                    <palavra>SIGNO</palavra>
+                </questao>
+            </tentativa>
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="17104878" tempoNoObjeto="0:0:54">
+        <tentativas>
+            <tentativa>
+                <questao concluida="sim">
+                    <dica>Uma narrativa textual de uma situação de uso da aplicação.</dica>
+                    <palavra>CENÁRIOS</palavra>
+                </questao>
+                <questao concluida="sim">
+                    <dica>Um personagem fictício, modelo hipotético de um grupo de usuários reais.</dica>
+                    <palavra>PERSONA</palavra>
+                </questao>
+                <questao concluida="sim">
+                    <dica>Qual é o teste que tem como objetivo medir quantitativamente o desempenho de um sistema com relação a determinados critérios?</dica>
+                    <palavra>USABILIDADE</palavra>
+                </questao>
+                <questao concluida="nao">
+                    <dica>Como é chamado o método de investigação que possui uma conversa guiada por um roteiro de perguntas ou tópicos?</dica>
+                    <palavra>ENTREVISTA</palavra>
+                </questao>
+            </tentativa>
+        </tentativas>
+    </acesso>
+</acessos>
