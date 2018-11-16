@@ -42,6 +42,17 @@
 					console.log(textStatus, errorThrown)
 				}
 			})
+
+			$.ajax({
+				url: "./php/analyticsScript.php",
+				type: "POST",
+				data: "",
+				success: function (data) {
+					console.log(data);
+				}, error: function (XMLHttpRequest, textStatus, errorThrown) {
+					console.log(textStatus, errorThrown)
+				}
+			})
 		}
 
 		//function to get how long someone stayed in the object

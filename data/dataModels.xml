@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<acessos mediaTempoTotalNoObjeto="">
+    <acesso idUsuario="" tempoNoObjeto="">
+        <tentativas>
+            <tentativa>
+                <questao concluida="">
+                    <dica></dica>
+                    <palavra></palavra>
+                </questao>
+            </tentativa>
+        </tentativas>
+    </acesso>
+</acessos>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<usuarios nmrDeUsuarios="">
+    <usuario id="" nome="" nmrDeAcessos="">
+    </usuario>
+</usuarios>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<analises>
+    <mediaDeTempoTotal/>
+
+</analises>

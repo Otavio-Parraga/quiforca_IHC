@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<usuarios nmrDeUsuarios="12">
+<usuarios nmrDeUsuarios="13">
     <usuario id="11548825" nome="Fausto Silva" nmrDeAcessos="2">
     </usuario>
     <usuario id="17104935" nome="Otávio Parraga" nmrDeAcessos="4">
@@ -16,8 +16,13 @@
     </usuario>
     <usuario id="18273846" nome="João Kleber" nmrDeAcessos="9">
     </usuario>
-<usuario id="18293748" nome="Roberto Carlos" nmrDeAcessos="2">
-</usuario><usuario id="" nome="Mc KEvin o Chris" nmrDeAcessos="1">
-</usuario><usuario id="17104878" nome="Mc KEvin o Chris" nmrDeAcessos="2">
-</usuario><usuario id="12131415" nome="Jesus" nmrDeAcessos="1">
+    <usuario id="18293748" nome="Roberto Carlos" nmrDeAcessos="2">
+    </usuario>
+    <usuario id="" nome="Mc KEvin o Chris" nmrDeAcessos="1">
+    </usuario>
+    <usuario id="17104878" nome="Mc KEvin o Chris" nmrDeAcessos="2">
+    </usuario>
+    <usuario id="12131415" nome="Jesus" nmrDeAcessos="1">
+    </usuario>
+<usuario id="28394859" nome="Mc Gorila" nmrDeAcessos="1">
 </usuario></usuarios>

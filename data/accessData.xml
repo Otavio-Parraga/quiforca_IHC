@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<acessos mediaTempoTotalNoObjeto="">
+<acessos mediaTempoTotalNoObjeto="0:7:7">
     <acesso idUsuario="19827387" tempoNoObjeto="0:0:46"/>
     <acesso idUsuario="19827387" tempoNoObjeto="0:22:1">
     </acesso>
@@ -96,6 +96,31 @@
                 <questao concluida="nao">
                     <dica>Como é chamado o método de investigação que possui uma conversa guiada por um roteiro de perguntas ou tópicos?</dica>
                     <palavra>ENTREVISTA</palavra>
+                </questao>
+            </tentativa>
+        </tentativas>
+        <tentativas>
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="17104878" tempoNoObjeto="0:46:40"/>
+    <acesso idUsuario="28394859" tempoNoObjeto="0:0:41">
+        <tentativas>
+            <tentativa>
+                <questao concluida="sim">
+                    <dica>Um design experimental e incompleto, construído para que projetistas possam explorar suas ideias e obter feedback do usuário.</dica>
+                    <palavra>PROTÓTIPO</palavra>
+                </questao>
+                <questao concluida="sim">
+                    <dica>Uma narrativa textual de uma situação de uso da aplicação.</dica>
+                    <palavra>CENÁRIOS</palavra>
+                </questao>
+                <questao concluida="sim">
+                    <dica>Um personagem fictício, modelo hipotético de um grupo de usuários reais.</dica>
+                    <palavra>PERSONA</palavra>
+                </questao>
+                <questao concluida="nao">
+                    <dica>Qualquer “coisa” que significa algo para alguém em determinada circunstância.</dica>
+                    <palavra>SIGNO</palavra>
                 </questao>
             </tentativa>
         </tentativas>
