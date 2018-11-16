@@ -39,5 +39,61 @@
     "palavra": "PROTÓTIPO", 
     "dica": "Um design experimental e incompleto, construído para que projetistas possam explorar suas ideias e obter feedback do usuário.",
     "contribuicao": "Mayara Jesus de Oliveira"
+},{
+    "palavra": "CONSENTIMENTO", 
+    "dica": "Termo que tem como função explicar o objetivo da pesquisa aos participantes e dizer exatamente como deverá ser a participação deles, além garantir que os direitos dos usuários não foram violados.",
+    "contribuicao": "Mayara Jesus de Oliveira"
+},{
+    "palavra": "PERCEPÇÃO", 
+    "dica": "Refere-se a como a informação é assimilada do ambiente pelos diferentes órgãos de sentido (olhos, ouvidos, dedos, etc).",
+    "contribuicao": "Mayara Jesus de Oliveira"
+},{
+    "palavra": "ATENÇÃO", 
+    "dica": "Processo de selecionar coisas em que se concentrar, em certos momentos, dentre uma variedade de possibilidades disponíveis. Pode envolve nossos sentidos auditivos e/ou visuais.",
+    "contribuicao": "Mayara Jesus de Oliveira"
+},{
+    "palavra": "ACESSIBILIDADE", 
+    "dica": "Está relacionado a facilitar o acesso a todos, removendo barreiras que possam impedir um usuário de acessar o sistema.",
+    "contribuicao": "Mayara Jesus de Oliveira"
+},{
+    "palavra": "VISIBILIDADE", 
+    "dica": "Palavra chave na heurística que trata de feedback para o usuário.",
+    "contribuicao": "Mayara Jesus de Oliveira"
+},{
+    "palavra": "CORRESPONDÊNCIA", 
+    "dica": "Palavra chave na heurística que trata de comunicação através de expressões e conceitos que são familiares ao usuário.",
+    "contribuicao": "Mayara Jesus de Oliveira"
+},{
+    "palavra": "LIBERDADE", 
+    "dica": "Palavra chave na heurística que trata da permissão que o usuário necessita para desfazer ou refazer uma ação.",
+    "contribuicao": "Mayara Jesus de Oliveira"
+},{
+    "palavra": "PADRONIZAÇÃO", 
+    "dica": "Palavra chave na heurística que fala como o usuário não deve precisar perguntar se palavras, situações ou ações diferentes significam a mesma coisa.",
+    "contribuicao": "Mayara Jesus de Oliveira"
+},{
+    "palavra": "PREVENÇÃO", 
+    "dica": "Palavra chave na heurística que fala sobre evitar a ocorrência de problemas realizados pelo usuário.",
+    "contribuicao": "Mayara Jesus de Oliveira"
+},{
+    "palavra": "RECONHECIMENTO", 
+    "dica": "Palavra chave na heurística que fala sobre o usuário não precisar se lembrar de objetos ou ações do sistema.",
+    "contribuicao": "Mayara Jesus de Oliveira"
+},{
+    "palavra": "FLEXIBILIDADE", 
+    "dica": "Palavra chave na heurística que fala sobre o sistema ser ágil para usuários avançados e ser fácil de utilizar pelos usuários leigos.",
+    "contribuicao": "Mayara Jesus de Oliveira"
+},{
+    "palavra": "MINIMALISTA", 
+    "dica": "Palavra chave na heurística que fala que os diálogos de um sistema não devem conter informação que sejam irrelevante ou raramente necessária.",
+    "contribuicao": "Mayara Jesus de Oliveira"
+},{
+    "palavra": "DIAGNOSTICAR", 
+    "dica": "Palavra chave na heurística que fala que as mensagens de erro devem ser expressas em linguagem simples (sem códigos), indicar precisamente o problema e sugerir uma solução de forma construtiva.",
+    "contribuicao": "Mayara Jesus de Oliveira"
+},{
+    "palavra": "AJUDA", 
+    "dica": "Palavra chave na heurística que trata de itens de auxílio para determinadas ações.",
+    "contribuicao": "Mayara Jesus de Oliveira"
 }]
 }
