@@ -15,10 +15,10 @@ for ($i = 0; $i < $GLOBALS["xml"]->count(); $i++) {
 $xml['mediaTempoTotalNoObjeto'] = time_avrg($total_time);
 
 //calls get_avrg_trials and set the respective attribute
-get_avrg_trials();
+$xml['mediaTentativasPorUsuario'] = get_avrg_trials();
 
 //calls get_avrg_questions and set the respective attribute
-get_avrg_questions();
+$xml['mediaAcertosPorUsuario'] = get_avrg_questions();
 //method to get the average number of trials
 function get_avrg_trials()
 {
@@ -30,13 +30,12 @@ function get_avrg_trials()
         if (isset($GLOBALS["xml"]->acesso[$i]->tentativas)) {
             //echo "deu bom" . "\n";
             for ($j = 0; $j < $GLOBALS["xml"]->acesso[$i]->tentativas->children()->count(); $j++) {
-                //echo $GLOBALS["xml"]->acesso[$i]->tentativas->children()->count();
                 $total_trials++;
                 //echo $total_trials . "\n";
             }
         }
     }
-    return /* round */($total_trials / $total_access);
+    return /* round */ ($total_trials / $total_access);
 }
 //method to get the average number of questions answered
 function get_avrg_questions()
@@ -46,16 +45,20 @@ function get_avrg_questions()
     //echo $total_access;
     //"for" to run between the access
     for ($i = 0; $i < $total_access; $i++) {
+        //if there are trials on that access
         if (isset($GLOBALS["xml"]->acesso[$i]->tentativas)) {
             //echo "deu bom" . "\n";
             for ($j = 0; $j < $GLOBALS["xml"]->acesso[$i]->tentativas->children()->count(); $j++) {
-                foreach ($GLOBALS["xml"]->acesso[$i]->tentativas->children() as $actual_trial) {
-                    $total_right_questions += $actual_trial->children()->count();
-                    echo $total_right_questions."\n";
+                foreach ($GLOBALS["xml"]->acesso[$i]->tentativas->tentativa[$j]->children() as $actual_question) {
+                    if ($actual_question["concluida"] == "sim") {
+                        $total_right_questions++;
+                    }
+
                 }
             }
         }
     }
+    return /* round */ ($total_right_questions / $total_access);
 }
 //method to find the average time
 function time_avrg($t)
@@ -72,9 +75,9 @@ function time_avrg($t)
     //split the string totallTime into hours, minutes and seconds
     $totalTime = explode(":", $totalTime->format("H:i:s"));
     //echo var_dump($totalTime);
-    $hours = (int) $totalTime[0];
-    $minutes = (int) $totalTime[1];
-    $seconds = (int) $totalTime[2];
+    $hours = (int)$totalTime[0];
+    $minutes = (int)$totalTime[1];
+    $seconds = (int)$totalTime[2];
     $totalSeconds = $hours * 3600 + $minutes * 60 + $seconds;
     //echo var_dump($totalSeconds);
     $time_avrg = $totalSeconds / count($GLOBALS["xml"]->children());
