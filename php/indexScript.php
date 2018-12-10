@@ -4,6 +4,7 @@
 session_start();
 $_SESSION['name'] = validateData($_POST['name']);
 $_SESSION['userId'] = validateData($_POST['userId']);
+$_SESSION['logged'] = 1;
 $path = simplexml_load_file("../data/userData.xml");
 $xml = new SimpleXMLElement($path->asXML());
 

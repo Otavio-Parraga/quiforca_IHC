@@ -1,4 +1,5 @@
 <?php
+session_start();
 $path = simplexml_load_file("../data/accessData.xml");
 $xml = new SimpleXMLElement($path->asXML());
 $total_time = "";
@@ -35,7 +36,7 @@ function get_avrg_trials()
             }
         }
     }
-    return /* round */ ($total_trials / $total_access);
+    return /* round */($total_trials / $total_access);
 }
 //method to get the average number of questions answered
 function get_avrg_questions()
@@ -58,7 +59,7 @@ function get_avrg_questions()
             }
         }
     }
-    return /* round */ ($total_right_questions / $total_access);
+    return /* round */($total_right_questions / $total_access);
 }
 //method to find the average time
 function time_avrg($t)
@@ -75,9 +76,9 @@ function time_avrg($t)
     //split the string totallTime into hours, minutes and seconds
     $totalTime = explode(":", $totalTime->format("H:i:s"));
     //echo var_dump($totalTime);
-    $hours = (int)$totalTime[0];
-    $minutes = (int)$totalTime[1];
-    $seconds = (int)$totalTime[2];
+    $hours = (int) $totalTime[0];
+    $minutes = (int) $totalTime[1];
+    $seconds = (int) $totalTime[2];
     $totalSeconds = $hours * 3600 + $minutes * 60 + $seconds;
     //echo var_dump($totalSeconds);
     $time_avrg = $totalSeconds / count($GLOBALS["xml"]->children());
@@ -101,3 +102,5 @@ function time_avrg($t)
 $archive = fopen("../data/accessData.xml", "w");
 fwrite($archive, $xml->saveXML());
 fclose($archive);
+
+$_SESSION['logged'] = 0;

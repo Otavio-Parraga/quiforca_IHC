@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if ($_SESSION['logged'] == 0) {
+    header('Location: http://learninganalyticsphp/quiforca_IHC/index.php');
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
