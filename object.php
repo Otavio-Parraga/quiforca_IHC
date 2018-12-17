@@ -42,7 +42,7 @@ if ($_SESSION['logged'] == 0) {
 				}
 			})
 			$.ajax({
-				url: "./php/kkEaeMen.php",
+				url: "./php/xmlController.php",
 				type: "POST",
 				data: "",
 				success: function (data) {
