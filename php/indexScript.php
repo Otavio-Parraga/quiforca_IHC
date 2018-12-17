@@ -1,7 +1,10 @@
 <?php
 //-------------------------SCRIPT TO CREATE THE USERS'S DATA
 //create session
-session_start();
+if(!isset($_SESSION)) 
+{ 
+    session_start(); 
+} 
 $_SESSION['name'] = validateData($_POST['name']);
 $_SESSION['userId'] = validateData($_POST['userId']);
 $_SESSION['logged'] = 1;

@@ -1,22 +1,17 @@
 <?php
-session_start();
+if(!isset($_SESSION)) 
+{ 
+    session_start(); 
+} 
 
-if ($_SESSION['logged'] == 1) {
-    header('Location: http://learninganalyticsphp/quiforca_IHC/erro.html');
+if (isset($_SESSION['logged']) && $_SESSION['logged'] == 1) {
+    header('Location: erro.html');
     exit();
 }
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<!--TO DO LIST:
-[] Colocar os campos para preenchimento de dados do usuário
-[] Deixar a página bonitinha
-[] Enviar dados do usuário para o indexScript.php
-[] Enviar horário de início para indexScript.php
-[] Ao final, redirecionar para a página object.html
--->
 
 <head>
     <title>QuiForca</title>
@@ -29,11 +24,11 @@ if ($_SESSION['logged'] == 1) {
 
 <body>
     <div class="form-style-6">
-        <form action="object.html">
+        <form action="object.php">
             <input type="text" placeholder="Nome" id="name" />
             <input type="text" placeholder="Matricula" id="userId" />
             <br>
-            <input type="submit" value="Enviar" id="sendUserData">
+            <input type="submit" value="Enviar" id="sendUserData" onClick="return validate()">
         </form>
     </div>
 
@@ -60,6 +55,17 @@ if ($_SESSION['logged'] == 1) {
                     console.log(textStatus, errorThrown)
                 }
             })
+        }
+
+        function validate(){
+            if(document.getElementById("name").value == ""){
+                alert("Insira um nome válido!");
+                return false;
+            } 
+            if (document.getElementById("userId").value== ""){
+                alert("Insira uma matrícula válida!");
+                return false;
+            }
         }
     </script>
 
