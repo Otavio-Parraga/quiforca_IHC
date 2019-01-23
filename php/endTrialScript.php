@@ -1,8 +1,6 @@
 <?php
 $path = simplexml_load_file("../data/auxData.xml");
 $xml = new SimpleXMLElement($path->asXML());
-$dica = $_POST['dica'];
-$palavra = $_POST['palavra'];
 
 //create question
 $nmrTentativas = $xml->count();

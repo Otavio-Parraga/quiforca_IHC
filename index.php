@@ -3,7 +3,7 @@ if(!isset($_SESSION))
 { 
     session_start(); 
 } 
-
+echo $_SESSION['logged'];
 if (isset($_SESSION['logged']) && $_SESSION['logged'] == 1) {
     header('Location: erro.html');
     exit();

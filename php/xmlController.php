@@ -4,8 +4,10 @@ $xml = new SimpleXMLElement($path->asXML());
 $pathAux = simplexml_load_file("../data/auxData.xml");
 $xmlAux = new SimpleXMLElement($pathAux->asXML());
 
+//create de aux tag in the beggining of the last access
 $xml->acesso[$xml->count() - 1]->addChild("aux");
 
+//clear the empty trials
 for ($i = 0; $i < $xmlAux->count(); $i++) {
     if (!isset($xmlAux->tentativa[$i]->questao)) {
         unset($xmlAux->tentativa[$i]);
@@ -17,10 +19,15 @@ for ($i = 0; $i < $xmlAux->count(); $i++) {
     }
 }
 
+
+//calls the method to insert one xml file inside the other
 simplexml_insert_after($xmlAux, $xml->acesso[$xml->count() - 1]->aux);
 
+
+//deletes the aux tag
 unset($xml->acesso[$xml->count() - 1]->aux);
 
+//clear the auxiliar xml file
 for ($i = 0; $i < $xmlAux->count(); $i++) {
     unset($xmlAux->tentativa[$i]);
 }

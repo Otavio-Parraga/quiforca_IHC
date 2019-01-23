@@ -1,5 +1,8 @@
 <?php
-session_start();
+if(!isset($_SESSION)) 
+{ 
+    session_start(); 
+} 
 $path = simplexml_load_file("../data/accessData.xml");
 $xml = new SimpleXMLElement($path->asXML());
 $total_time = "";
@@ -104,3 +107,5 @@ fwrite($archive, $xml->saveXML());
 fclose($archive);
 
 $_SESSION['logged'] = 0;
+session_abort();
+

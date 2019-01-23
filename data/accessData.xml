@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<acessos mediaTempoTotalNoObjeto="0:7:7">
+<acessos mediaTempoTotalNoObjeto="0:1:1" mediaTentativasPorUsuario="0.2093023255814" mediaAcertosPorUsuario="0.3953488372093">
     <acesso idUsuario="19827387" tempoNoObjeto="0:0:46"/>
     <acesso idUsuario="19827387" tempoNoObjeto="0:22:1">
     </acesso>
@@ -123,4 +123,198 @@
             </tentativa>
         </tentativas>
     </acesso>
-</acessos>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:43">
+        <tentativas>
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:1">
+        <tentativas>
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:3">
+        <tentativas>
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:2">
+        <tentativas>
+            <tentativa>
+                <questao concluida="sim">
+                    <dica>Qual é o nome do criador do conjunto de 10 diretrizes que descrevem características desejáveis da interface e da interação de um sistema?</dica>
+                    <palavra>NIELSEN</palavra>
+                </questao>
+            </tentativa>
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:1">
+        <tentativas>
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:2">
+        <tentativas>
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:43">
+        <tentativas>
+        </tentativas>
+        <tentativas>
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:12"/>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:6">
+        <tentativas>
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:19">
+        <tentativas>
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="" tempoNoObjeto="0:0:1">
+        <tentativas>
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:0">
+        <tentativas>
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:12">
+        <tentativas>
+            <tentativa>
+                <questao concluida="nao">
+                    <dica>Palavra chave na heurística que fala como o usuário não deve precisar perguntar se palavras, situações ou ações diferentes significam a mesma coisa.</dica>
+                    <palavra>PADRONIZAÇÃO</palavra>
+                </questao>
+            </tentativa>
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:0">
+        <tentativas>
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:11">
+        <tentativas>
+            <tentativa>
+                <questao concluida="nao">
+                    <dica>Palavra chave na heurística que fala sobre evitar a ocorrência de problemas realizados pelo usuário.</dica>
+                    <palavra>PREVENÇÃO</palavra>
+                </questao>
+            </tentativa>
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:2">
+        <tentativas>
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:3">
+        <tentativas>
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:4">
+        <tentativas>
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:11">
+        <tentativas>
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:18">
+        <tentativas>
+
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:0">
+        <tentativas>
+
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:0">
+        <tentativas>
+
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:0">
+        <tentativas>
+
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:0">
+        <tentativas>
+
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:0">
+        <tentativas>
+
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:0">
+        <tentativas>
+
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:0">
+        <tentativas>
+
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:0">
+        <tentativas>
+
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:0">
+        <tentativas>
+
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:2:20">
+        <tentativas>
+
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:17">
+        <tentativas>
+
+        </tentativas>
+        <tentativas>
+
+
+
+        </tentativas>
+        <tentativas>
+
+
+
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:0:42">
+        <tentativas>
+
+
+
+        </tentativas>
+    </acesso>
+<acesso idUsuario="18273846" tempoNoObjeto="0:0:11"><tentativas>
+
+
+    
+</tentativas><tentativas>
+
+
+    
+</tentativas><tentativas>
+
+
+    
+</tentativas><tentativas>
+
+
+    
+</tentativas><tentativas>
+
+
+    
+</tentativas><tentativas>
+
+
+    
+</tentativas></acesso></acessos>
