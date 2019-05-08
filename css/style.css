@@ -167,7 +167,7 @@ p
 #caixaBotoes
 {
 	position: relative;
-	width: 500px;
+	/* width: 500px; */
 	height: 120px;
 	left: 30%;
 	top: 65%;
@@ -185,6 +185,15 @@ p
 	width: 119px;
 	height: 69px;
 	background-image: url("../imgs/btnCreditos.png")
+}
+
+#btnSair
+{
+	width: 50px;
+	height: 50px;
+	background-image: url("../imgs/btnVoltar.png");
+	right: 5%;
+	top: 47%
 }
 
 #btnRanking

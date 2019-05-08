@@ -67,7 +67,6 @@ function get_avrg_questions()
 //method to find the average time
 function time_avrg($t)
 {
-    $aux;
     //split the string with the times
     $totalTime = new DateTime("00:00:00");
     $t = explode("-", $t);

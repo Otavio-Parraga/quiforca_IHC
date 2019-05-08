@@ -1,14 +1,13 @@
 <?php
-if(!isset($_SESSION)) 
+/* if(!isset($_SESSION)) 
 { 
     session_start(); 
 } 
-echo $_SESSION['logged'];
-if (isset($_SESSION['logged']) && $_SESSION['logged'] == 1) {
+if (isset($_SESSION)) {
     header('Location: erro.html');
     exit();
-}
-?>
+} */
+?> 
 
 <!DOCTYPE html>
 <html lang="pt-br">

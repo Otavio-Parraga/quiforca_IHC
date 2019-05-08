@@ -31,7 +31,7 @@ if (validateTimeOnObject()) {
 //save the file
     $archive = fopen("../data/accessData.xml", "w");
     fwrite($archive, $xml->asXML());
-    include "./objectScripts.php";
+    //include "./objectScripts.php";
     fclose($archive);
 } else {
     exit();

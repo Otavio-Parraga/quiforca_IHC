@@ -8,8 +8,7 @@
  */
 
 
-function criarCamadaMenu()
-{
+function criarCamadaMenu() {
 	var el = document.createElement("div");
 	el.setAttribute("id", "camadaMenu");
 	$("#palco").append(el);
@@ -20,63 +19,118 @@ function criarCamadaMenu()
 
 
 	var botaoJogar = document.createElement("div");
-	botaoJogar.setAttribute("id" , "btnJogar");
-	botaoJogar.setAttribute("tabIndex" , "1");
-	botaoJogar.setAttribute("role" , "button");
-	botaoJogar.setAttribute("aria-label" , "Jogar");
-	botaoJogar.setAttribute("class" , "botao");
+	botaoJogar.setAttribute("id", "btnJogar");
+	botaoJogar.setAttribute("tabIndex", "1");
+	botaoJogar.setAttribute("role", "button");
+	botaoJogar.setAttribute("aria-label", "Jogar");
+	botaoJogar.setAttribute("class", "botao");
 	caixaBotoes.appendChild(botaoJogar);
 
-	botaoJogar.onfocus = function() {
+	botaoJogar.onfocus = function () {
 		adicionarComandosEnterSpace(ativarBotaoJogar, botaoJogar);
 	}
-	botaoJogar.onblur = function() {
+	botaoJogar.onblur = function () {
 		removerComandosEnterSpace();
 	}
-	botaoJogar.onclick = function()
-	{
+	botaoJogar.onclick = function () {
 		ativarBotaoJogar();
 	}
 
 	var botaoCreditos = document.createElement("div");
-	botaoCreditos.setAttribute("id" , "btnCreditos");
-	botaoCreditos.setAttribute("tabIndex" , "0");
-	botaoCreditos.setAttribute("role" , "button");
-	botaoCreditos.setAttribute("aria-label" , "Créditos");
-	botaoCreditos.setAttribute("class" , "botao");
+	botaoCreditos.setAttribute("id", "btnCreditos");
+	botaoCreditos.setAttribute("tabIndex", "0");
+	botaoCreditos.setAttribute("role", "button");
+	botaoCreditos.setAttribute("aria-label", "Créditos");
+	botaoCreditos.setAttribute("class", "botao");
 	caixaBotoes.appendChild(botaoCreditos);
 
-	botaoCreditos.onfocus = function() {
+	botaoCreditos.onfocus = function () {
 		adicionarComandosEnterSpace(ativarBotaoCreditos, botaoCreditos);
 	}
-	botaoCreditos.onblur = function() {
+	botaoCreditos.onblur = function () {
 		removerComandosEnterSpace();
 	}
-	botaoCreditos.onclick = function()
-	{
+	botaoCreditos.onclick = function () {
 		ativarBotaoCreditos();
 	}
+
+	//CONTROLES PARA BOTAO SAIR DO JOGO
+	/* var botaoSair = document.createElement("div");
+	botaoSair.setAttribute("id", "btnSair");
+	botaoSair.setAttribute("tabIndex", "2");
+	botaoSair.setAttribute("role", "button");
+	botaoSair.setAttribute("aria-label", "Sair do Jogo");
+	botaoSair.setAttribute("class", "botao");
+	caixaBotoes.appendChild(botaoSair); */
+
+/* 	botaoSair.onfocus = function () {
+		adicionarComandosEnterSpace(ativarBotaoSair, botaoSair);
+	}
+	botaoSair.onblur = function () {
+		removerComandosEnterSpace();
+	}
+	botaoSair.onclick = function () {
+		ativarBotaoSair();
+	} */
 }
 
-function ativarBotaoJogar()
-{
+/* function ativarBotaoSair() {
+	destruirCamadaMenu();
+	criarCamadaFinal();
+}
+
+function criarCamadaFinal() {
+	var el = document.createElement("div");
+	el.setAttribute("id", "camadaCreditos");
+	$("#palco").append(el);
+
+
+	var para = $('<br>').appendTo(el);
+	var para = $('<br>').appendTo(el);
+	var para = $('<br>').appendTo(el);
+
+	var para = document.createElement("p");
+	para.innerHTML = "Obrigado por jogar, volte sempre!";
+	el.appendChild(para);
+
+	var colLeft = document.createElement("div");
+	colLeft.setAttribute("style", "width: 230px; float: left;  text-align: right;");
+	el.appendChild(colLeft);
+
+	var colRight = document.createElement("div");
+	colRight.setAttribute("style", "width: 230px; float: right; text-align: left;");
+	el.appendChild(colRight);
+
+	var colLeft = document.createElement("div");
+	colLeft.setAttribute("style", "width: 250px; float: left;  text-align: center;");
+	el.appendChild(colLeft);
+
+	var colRight = document.createElement("div");
+	colRight.setAttribute("style", "width: 250px; float: right; text-align: center;");
+	el.appendChild(colRight);
+
+
+	el.onmousedown = function () {
+		destruirCamadaCreditos();
+		criarCamadaMenu();
+	}
+} */
+//Fim do codigo para o botao sair
+function ativarBotaoJogar() {
 	destruirCamadaMenu();
 	criarCamadaJogo();
 }
-function ativarBotaoCreditos()
-{
+function ativarBotaoCreditos() {
 	destruirCamadaMenu();
 	criarCamadaCreditos();
 }
 
-function destruirCamadaMenu()
-{
+function destruirCamadaMenu() {
 
 	$("#camadaMenu").remove();
 }
 
-function criarCamadaJogo()
-{
+function criarCamadaJogo() {
 	var el = document.createElement("div");
 	el.setAttribute("id", "camadaJogo");
 	$("#palco").append(el);
@@ -84,13 +138,11 @@ function criarCamadaJogo()
 	iniciar();
 }
 
-function destruirCamadaJogo()
-{
+function destruirCamadaJogo() {
 	$("#camadaJogo").remove();
 }
 
-function criarCamadaCreditos()
-{
+function criarCamadaCreditos() {
 	var el = document.createElement("div");
 	el.setAttribute("id", "camadaCreditos");
 	$("#palco").append(el);
@@ -162,42 +214,39 @@ function criarCamadaCreditos()
 	colRight.appendChild(para);
 
 
-	el.onmousedown = function()
-	{
+	el.onmousedown = function () {
 		destruirCamadaCreditos();
 		criarCamadaMenu();
 	}
 }
 
-function destruirCamadaCreditos()
-{
+function destruirCamadaCreditos() {
 	$("#camadaCreditos").remove();
 }
 
-function criarCamadaVitoria()
-{
+function criarCamadaVitoria() {
 	var fase;
 	var faseId;
 	var el = $('<div>').attr("id", "camadaVitoria").appendTo($("#palco"));
-	if((jogo.bdTamanho) == 0) {
+	if ((jogo.bdTamanho) == 0) {
 		$('<p>').attr('id', 'pontosNaTela')
 			.html('Pontos: ' + parseInt(jogo.pontos))
 			.appendTo($('#camadaVitoria'));
 	}
 	$('<div>').css({
-			'position': 'absolute',
-			'width': '800px',
-			'height': '600px',
-			'background-image': 'url("imgs/vitoria.png")'})
-		.click(function(){
-			if(jogo.bdTamanho != 0) {
-				sendData(jogo.pontos, jogo.pontosParciais , true, jogo.erros, jogo.fase, jogo.faseId,jogo.bd.length, false);
+		'position': 'absolute',
+		'width': '800px',
+		'height': '600px',
+		'background-image': 'url("imgs/vitoria.png")'
+	})
+		.click(function () {
+			if (jogo.bdTamanho != 0) {
+				sendData(jogo.pontos, jogo.pontosParciais, true, jogo.erros, jogo.fase, jogo.faseId, jogo.bd.length, false);
 				destruirCamadaVitoria();
 				criarCamadaJogo();
 			}
-			else
-			{
-				sendData(jogo.pontos, jogo.pontosParciais , true, jogo.erros, jogo.fase, jogo.faseId,jogo.bd.length, false);
+			else {
+				sendData(jogo.pontos, jogo.pontosParciais, true, jogo.erros, jogo.fase, jogo.faseId, jogo.bd.length, false);
 				destruirCamadaVitoria();
 				criarCamadaMenu();
 				iniciarNovoJogo();
@@ -209,13 +258,11 @@ function criarCamadaVitoria()
 
 }
 
-function destruirCamadaVitoria()
-{
+function destruirCamadaVitoria() {
 	$("#camadaVitoria").remove();
 }
 
-function criarCamadaDerrota()
-{
+function criarCamadaDerrota() {
 	var fase;
 	var faseId;
 	var pontos = jogo.pontos;
@@ -227,11 +274,12 @@ function criarCamadaDerrota()
 			'height': '600px',
 			'position': 'absolute',
 			'top': '0px',
-			'style': 'display: none'})
-		.click(function(){
+			'style': 'display: none'
+		})
+		.click(function () {
 			destruirCamadaDerrota();
 			destruirCamadaJogo();
-			sendData(jogo.pontos, jogo.pontosParciais , false, jogo.erros, jogo.fase, jogo.faseId,jogo.bd.length, false);
+			sendData(jogo.pontos, jogo.pontosParciais, false, jogo.erros, jogo.fase, jogo.faseId, jogo.bd.length, false);
 			//salvaPontuacao(jogo.nome, pontos);
 			criarCamadaMenu();
 		})
@@ -246,22 +294,21 @@ function criarCamadaDerrota()
 	$("#camadaDerrota").append(jogo.palavraNaTela);
 
 	$('<div>').css({
-			'position': 'absolute',
-			'width': '800px',
-			'height': '600px',
-			'background-image': 'url("imgs/game_over.png")'})
+		'position': 'absolute',
+		'width': '800px',
+		'height': '600px',
+		'background-image': 'url("imgs/game_over.png")'
+	})
 		.appendTo($('#camadaDerrota'));
 
 
 }
 
-function destruirCamadaDerrota()
-{
+function destruirCamadaDerrota() {
 	$("#camadaDerrota").remove();
 }
 
-function criarCamadaRanking()
-{
+function criarCamadaRanking() {
 	$('<div>').attr('id', 'camadaRanking')
 		.css({
 			'width': '800px',
@@ -269,34 +316,34 @@ function criarCamadaRanking()
 			'position': 'absolute',
 			'top': '0px'
 		})
-		.click(function(){
+		.click(function () {
 			destruirCamadaRanking();
 			criarCamadaMenu();
 		})
 		.appendTo($('#palco'));
 
 	var colRank = $('<div>').css({
-			'width': '250px',
-			'position': 'absolute',
-			'text-align': 'center',
-			'top': '36%',
-			'left': '1%'
-		})
+		'width': '250px',
+		'position': 'absolute',
+		'text-align': 'center',
+		'top': '36%',
+		'left': '1%'
+	})
 		.appendTo($('#camadaRanking'));
 
 	$('<p>').html('Ranking').appendTo(colRank);
 
 	for (i = 0; i < ranking.length; i++) {
-		$('<p>').html((i+1) + '.').appendTo(colRank);
+		$('<p>').html((i + 1) + '.').appendTo(colRank);
 	}
 
 	var colNome = $('<div>').css({
-			'width': '340px',
-			'position': 'absolute',
-			'text-align': 'center',
-			'top': '36%',
-			'left': '15%'
-		})
+		'width': '340px',
+		'position': 'absolute',
+		'text-align': 'center',
+		'top': '36%',
+		'left': '15%'
+	})
 		.appendTo($('#camadaRanking'));
 
 	$('<p>').html('Nome').appendTo(colNome);
@@ -306,12 +353,12 @@ function criarCamadaRanking()
 	}
 
 	var colPontuacao = $('<div>').css({
-			'width': '100px',
-			'position': 'absolute',
-			'text-align': 'center',
-			'top': '36%',
-			'left': '400px'
-		})
+		'width': '100px',
+		'position': 'absolute',
+		'text-align': 'center',
+		'top': '36%',
+		'left': '400px'
+	})
 		.appendTo($('#camadaRanking'));
 
 	$('<p>').html('Pontuação').appendTo(colPontuacao);
@@ -321,12 +368,12 @@ function criarCamadaRanking()
 	}
 
 	var colData = $('<div>').css({
-			'width': '210px',
-			'position': 'absolute',
-			'text-align': 'center',
-			'top': '36%',
-			'left': '530px'
-		})
+		'width': '210px',
+		'position': 'absolute',
+		'text-align': 'center',
+		'top': '36%',
+		'left': '530px'
+	})
 		.appendTo($('#camadaRanking'));
 
 	$('<p>').html('Data').appendTo(colData);
@@ -336,25 +383,23 @@ function criarCamadaRanking()
 	}
 }
 
-function formataData(strData)
-{
+function formataData(strData) {
 	var data = new Date(strData);
 	var v = data.getDate();
 	var s = (v < 10 ? '0' + v : v) + "/";
 	v = data.getMonth() + 1;
-	s += (v < 10 ? '0' + v: v) + "/";
+	s += (v < 10 ? '0' + v : v) + "/";
 	s += data.getFullYear() + " ";
 	v = data.getHours();
-	s += (v < 10 ? '0' + v: v) + ":";
+	s += (v < 10 ? '0' + v : v) + ":";
 	v = data.getMinutes();
-	s += (v < 10 ? '0' + v: v) + ":";
+	s += (v < 10 ? '0' + v : v) + ":";
 	v = data.getSeconds();
-	s += (v < 10 ? '0' + v: v);
+	s += (v < 10 ? '0' + v : v);
 	return s;
 }
 
-function destruirCamadaRanking()
-{
+function destruirCamadaRanking() {
 	$("#camadaRanking").remove();
 }
 

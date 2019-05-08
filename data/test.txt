@@ -1,4 +1,0 @@
-A dica era: Qual é o teste que tem como objetivo medir quantitativamente o desempenho de um sistema com relação a determinados critérios?
-A palavra era: USABILIDADE
-A dica era: Como é chamado o método de investigação que possui uma conversa guiada por um roteiro de perguntas ou tópicos?
-A palavra era: ENTREVISTA

@@ -1,15 +1,5 @@
 <?php
-if(!isset($_SESSION)) 
-{ 
-    session_start(); 
-} 
-
-if ($_SESSION['logged'] == 0) {
-    header('Location: index.php');
-    exit();
-}
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -34,34 +24,48 @@ if ($_SESSION['logged'] == 0) {
 		function onClose() {
 			trialsToString();
 			window.endDate = new Date();
+			runAccessScript();
+			runXmlController();
+			runAnalytics();
+		}
+
+		function runAccessScript() {
 			$.ajax({
 				url: "./php/accessScript.php",
 				type: "POST",
 				data: "timeSpentOnObject=" + getDifferenceBetweenDates(window.beginDate, window.endDate),
-				success: function (data) {
+				success: function(data) {
 					console.log(data);
-				}, error: function (XMLHttpRequest, textStatus, errorThrown) {
+				},
+				error: function(XMLHttpRequest, textStatus, errorThrown) {
 					console.log(textStatus, errorThrown)
 				}
 			})
-			$.ajax({
-				url: "./php/xmlController.php",
-				type: "POST",
-				data: "",
-				success: function (data) {
-					console.log(data);
-				}, error: function (XMLHttpRequest, textStatus, errorThrown) {
-					console.log(textStatus, errorThrown)
-				}
-			})
+		}
 
+		function runAnalytics() {
 			$.ajax({
 				url: "./php/analyticsScript.php",
 				type: "POST",
 				data: "",
-				success: function (data) {
+				success: function(data) {
 					console.log(data);
-				}, error: function (XMLHttpRequest, textStatus, errorThrown) {
+				},
+				error: function(XMLHttpRequest, textStatus, errorThrown) {
+					console.log(textStatus, errorThrown)
+				}
+			})
+		}
+
+		function runXmlController() {
+			$.ajax({
+				url: "./php/xmlController.php",
+				type: "POST",
+				data: "",
+				success: function(data) {
+					console.log(data);
+				},
+				error: function(XMLHttpRequest, textStatus, errorThrown) {
 					console.log(textStatus, errorThrown)
 				}
 			})
