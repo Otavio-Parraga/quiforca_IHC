@@ -241,12 +241,12 @@ function criarCamadaVitoria() {
 	})
 		.click(function () {
 			if (jogo.bdTamanho != 0) {
-				sendData(jogo.pontos, jogo.pontosParciais, true, jogo.erros, jogo.fase, jogo.faseId, jogo.bd.length, false);
+				//sendData(jogo.pontos, jogo.pontosParciais, true, jogo.erros, jogo.fase, jogo.faseId, jogo.bd.length, false);
 				destruirCamadaVitoria();
 				criarCamadaJogo();
 			}
 			else {
-				sendData(jogo.pontos, jogo.pontosParciais, true, jogo.erros, jogo.fase, jogo.faseId, jogo.bd.length, false);
+				//sendData(jogo.pontos, jogo.pontosParciais, true, jogo.erros, jogo.fase, jogo.faseId, jogo.bd.length, false);
 				destruirCamadaVitoria();
 				criarCamadaMenu();
 				iniciarNovoJogo();
@@ -279,7 +279,7 @@ function criarCamadaDerrota() {
 		.click(function () {
 			destruirCamadaDerrota();
 			destruirCamadaJogo();
-			sendData(jogo.pontos, jogo.pontosParciais, false, jogo.erros, jogo.fase, jogo.faseId, jogo.bd.length, false);
+			//sendData(jogo.pontos, jogo.pontosParciais, false, jogo.erros, jogo.fase, jogo.faseId, jogo.bd.length, false);
 			//salvaPontuacao(jogo.nome, pontos);
 			criarCamadaMenu();
 		})
