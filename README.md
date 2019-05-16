@@ -1,5 +1,6 @@
-QuiForca
+QuiForca IHC
 ========
 
-Data de criação: __/__/2012.
-Última modificação: 27/05/2013.
+Objeto de aprendzagem voltado par ao ensino de IHC
+
+Última modificação: 08/05/2019.
