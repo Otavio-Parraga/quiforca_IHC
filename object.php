@@ -11,7 +11,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<body onbeforeunload="return onClose()">
+<body>
+	<!-- <button onclick="onClose();">Sair</button> -->
 	<script id="ancora" src="js/script.js" class="object"></script>
 	<script src="js/eventosclasses.js" class="object"></script>
 	<script src="js/logica.js" defer class="object"></script>
@@ -19,14 +20,27 @@
 	<script src="js/rest.js" defer class="object"></script>
 	<script src="stats.js" defer class="object"></script>
 	<script>
+		window.sended = 0;
 		window.trials = "";
+
+		window.onbeforeunload = function(evt) {
+			var message = "Ok";
+			if (evt) {
+				evt.returnValue = message;
+			}
+			if (sended == 0)
+				return onClose();
+		}
+
 		//function to run when the user close the object
 		function onClose() {
-			trialsToString();
-			window.endDate = new Date();
-			runAccessScript();
-			runXmlController();
-			runAnalytics();
+			if (window.sended == 0) {
+				trialsToString();
+				window.endDate = new Date();
+				runAccessScript();
+				window.sended = 1;
+				//window.location('final.html');
+			}
 		}
 
 		function runAccessScript() {
@@ -36,11 +50,29 @@
 				data: "timeSpentOnObject=" + getDifferenceBetweenDates(window.beginDate, window.endDate),
 				success: function(data) {
 					console.log(data);
+					runXmlController();
 				},
 				error: function(XMLHttpRequest, textStatus, errorThrown) {
 					console.log(textStatus, errorThrown)
 				}
 			})
+			console.log("Done first method");
+		}
+
+		function runXmlController() {
+			$.ajax({
+				url: "./php/xmlController.php",
+				type: "POST",
+				data: "",
+				success: function(data) {
+					console.log(data);
+					runAnalytics();
+				},
+				error: function(XMLHttpRequest, textStatus, errorThrown) {
+					console.log(textStatus, errorThrown)
+				}
+			})
+			console.log("Done second method");
 		}
 
 		function runAnalytics() {
@@ -55,20 +87,7 @@
 					console.log(textStatus, errorThrown)
 				}
 			})
-		}
-
-		function runXmlController() {
-			$.ajax({
-				url: "./php/xmlController.php",
-				type: "POST",
-				data: "",
-				success: function(data) {
-					console.log(data);
-				},
-				error: function(XMLHttpRequest, textStatus, errorThrown) {
-					console.log(textStatus, errorThrown)
-				}
-			})
+			console.log("Done third method");
 		}
 
 		//function to get how long someone stayed in the object
@@ -86,6 +105,7 @@
 			}
 		}
 	</script>
+
 </body>
 
 </html>

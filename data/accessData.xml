@@ -1,21 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<acessos mediaTempoTotalNoObjeto="0:0:27" mediaTentativasPorUsuario="1" mediaAcertosPorUsuario="3">
-    <acesso idUsuario="19827387" tempoNoObjeto="0:0:27">
-        <tentativas>
-            <tentativa>
-                <questao concluida="sim">
-                    <dica>Qualquer “coisa” que significa algo para alguém em determinada circunstância.</dica>
-                    <palavra>SIGNO</palavra>
-                </questao>
-                <questao concluida="sim">
-                    <dica>Um design experimental e incompleto, construído para que projetistas possam explorar suas ideias e obter feedback do usuário.</dica>
-                    <palavra>PROTÓTIPO</palavra>
-                </questao>
-                <questao concluida="sim">
-                    <dica>Como é chamado o método de investigação que possui uma conversa guiada por um roteiro de perguntas ou tópicos?</dica>
-                    <palavra>ENTREVISTA</palavra>
-                </questao>
-            </tentativa>
-        </tentativas>
-    </acesso>
+<acessos mediaTempoTotalNoObjeto="0:0:18" mediaTentativasPorUsuario="1" mediaAcertosPorUsuario="1">
 </acessos>

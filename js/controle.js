@@ -61,9 +61,9 @@ function criarCamadaMenu() {
 	botaoSair.setAttribute("role", "button");
 	botaoSair.setAttribute("aria-label", "Sair do Jogo");
 	botaoSair.setAttribute("class", "botao");
-	caixaBotoes.appendChild(botaoSair); */
+	caixaBotoes.appendChild(botaoSair);
 
-/* 	botaoSair.onfocus = function () {
+	botaoSair.onfocus = function () {
 		adicionarComandosEnterSpace(ativarBotaoSair, botaoSair);
 	}
 	botaoSair.onblur = function () {

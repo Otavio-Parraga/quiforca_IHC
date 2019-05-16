@@ -1,8 +1,12 @@
 <?php
+ if(!isset($_SESSION)) 
+ { 
+     session_start(); 
+ }
 $path = simplexml_load_file("../data/accessData.xml");
 $xml = new SimpleXMLElement($path->asXML());
-$pathAux = simplexml_load_file("../data/auxData.xml");
-$xmlAux = new SimpleXMLElement($pathAux->asXML());
+/* $pathAux = simplexml_load_file("../data/auxData.xml");
+$xmlAux = new SimpleXMLElement($pathAux->asXML()); */
 $userId = $_SESSION['userId'];
 $timeOnObject = validateData($_POST['timeSpentOnObject']);
 
@@ -16,10 +20,10 @@ if (validateTimeOnObject()) {
     $actualAccess = $xml->acesso[$nmrAcessos - 1];
 
 //set the number of trials
-    $trials = $xmlAux->children();
+/*     $trials = $xmlAux->children();
     foreach ($trials as $actualTrial) {
         $actualAccess->addChild($actualTrial);
-    }
+    } */
 
 
 //create access attributes
