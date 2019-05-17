@@ -38,6 +38,7 @@
 				trialsToString();
 				window.endDate = new Date();
 				runAccessScript();
+				runAnalytics();
 				window.sended = 1;
 				//window.location('final.html');
 			}
@@ -51,6 +52,7 @@
 				success: function(data) {
 					console.log(data);
 					runXmlController();
+                    //runAnalytics();
 				},
 				error: function(XMLHttpRequest, textStatus, errorThrown) {
 					console.log(textStatus, errorThrown)
@@ -66,7 +68,7 @@
 				data: "",
 				success: function(data) {
 					console.log(data);
-					runAnalytics();
+					//runAnalytics();
 				},
 				error: function(XMLHttpRequest, textStatus, errorThrown) {
 					console.log(textStatus, errorThrown)
