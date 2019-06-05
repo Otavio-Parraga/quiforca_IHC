@@ -1,14 +1,3 @@
-<?php
-/* if(!isset($_SESSION)) 
-{ 
-    session_start(); 
-} 
-if (isset($_SESSION)) {
-    header('Location: erro.html');
-    exit();
-} */
-?> 
-
 <!DOCTYPE html>
 <html lang="pt-br">
 

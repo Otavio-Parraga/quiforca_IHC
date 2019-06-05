@@ -1,5 +1,3 @@
-<?php
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -12,7 +10,6 @@
 </head>
 
 <body>
-	<!-- <button onclick="onClose();">Sair</button> -->
 	<script id="ancora" src="js/script.js" class="object"></script>
 	<script src="js/eventosclasses.js" class="object"></script>
 	<script src="js/logica.js" defer class="object"></script>

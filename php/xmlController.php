@@ -1,7 +1,10 @@
 <?php
+session_start(); 
+$userId = $_SESSION['userId'];
+
 $path = simplexml_load_file("../data/accessData.xml");
 $xml = new SimpleXMLElement($path->asXML());
-$pathAux = simplexml_load_file("../data/auxData.xml");
+$pathAux = simplexml_load_file("../data/$userId.xml");
 $xmlAux = new SimpleXMLElement($pathAux->asXML());
 
 //create de aux tag in the beggining of the last access
@@ -39,12 +42,14 @@ for ($i = 0; $i < $xmlAux->count(); $i++) {
 
 // print in the test file
 $archive = fopen("../data/accessData.xml", "w");
-$djMarquinhos = fopen("../data/auxData.xml", "w");
+$djMarquinhos = fopen("../data/$userId.xml", "w");
 fwrite($archive, $xml->saveXML());
 fwrite($djMarquinhos, $xmlAux->saveXML());
 //fwrite($archive, $xml);
 fclose($archive);
 fclose($djMarquinhos);
+
+unlink("../data/$userId.xml");
 
 
 //method to insert an xml node above another

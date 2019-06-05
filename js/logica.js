@@ -106,16 +106,6 @@ function update() {
 			setTimeout(update, 50);
 			break;
 		case 0:
-		$.ajax({
-			url: "../php/endTrialScript.php",
-			type: "POST",
-			data: "",
-			success: function (data) {
-				console.log(data);
-			}, error: function (XMLHttpRequest, textStatus, errorThrown) {
-				console.log(textStatus, errorThrown)
-			}
-		})
 			//Fim de jogo: jogador perdeu
 			jogo.palavraNaTela.innerHTML = jogo.palavraSorteada;
 			aux = 5 * Math.pow(0.8, jogo.erros);
@@ -124,6 +114,7 @@ function update() {
 			criarCamadaDerrota();
 			break;
 		case 1:
+			rightQuestion();
 			//Fim de jogo: jogador ganhou
 			var el = document.getElementById("camadaJogo");
 
@@ -458,6 +449,19 @@ function addTentativa() {
 	})
 	//console.log(window.tentativas);
 	//console.log("ContadorTent: " + window.contadorTentativas);
+}
+
+function rightQuestion() {
+	$.ajax({
+		url: "../php/setRightQuestion.php",
+		type: "POST",
+		data: "",
+		success: function (data) {
+			console.log(data);
+		}, error: function (XMLHttpRequest, textStatus, errorThrown) {
+			console.log(textStatus, errorThrown)
+		}
+	})
 }
 
 function printVariables() {

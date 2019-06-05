@@ -1,3 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<acessos mediaTempoTotalNoObjeto="0:0:18" mediaTentativasPorUsuario="1" mediaAcertosPorUsuario="1">
+<acessos mediaTempoTotalNoObjeto="0:1:1" mediaTentativasPorUsuario="0.5" mediaAcertosPorUsuario="1.5">
+    <acesso idUsuario="17104935" tempoNoObjeto="0:0:38">
+        <tentativas>
+            <tentativa>
+                <questao concluida="sim">
+                    <dica>Pesquisa inicial para identificar necessidades dos usuários e oportunidades de melhoria</dica>
+                    <palavra>ELICITAÇÃO</palavra>
+                </questao>
+                <questao concluida="sim">
+                    <dica>Qual é o teste que tem como objetivo avaliar a qualidade da comunicação do designer para com os usuários?</dica>
+                    <palavra>COMUNICABILIDADE</palavra>
+                </questao>
+                <questao concluida="sim">
+                    <dica>Como é chamado o método de investigação que permite coletar rapidamente dados de muitos usuários?</dica>
+                    <palavra>QUESTIONARIO</palavra>
+                </questao>
+                <questao concluida="nao">
+                    <dica>Processo de selecionar coisas em que se concentrar, em certos momentos, dentre uma variedade de possibilidades disponíveis. Pode envolve nossos sentidos auditivos e/ou visuais.</dica>
+                    <palavra>ATENÇÃO</palavra>
+                </questao>
+            </tentativa>
+        </tentativas>
+    </acesso>
+    <acesso idUsuario="18273846" tempoNoObjeto="0:1:58">
+        <tentativas>
+            <tentativa>
+                <questao concluida="sim">
+                    <dica>Como é chamado o método de investigação que permite coletar rapidamente dados de muitos usuários?</dica>
+                    <palavra>QUESTIONARIO</palavra>
+                </questao>
+                <questao concluida="nao">
+                    <dica>Palavra chave na heurística que fala sobre o sistema ser ágil para usuários avançados e ser fácil de utilizar pelos usuários leigos.</dica>
+                    <palavra>FLEXIBILIDADE</palavra>
+                </questao>
+            </tentativa>
+            <tentativa>
+                <questao concluida="sim">
+                    <dica>Está relacionado a facilitar o acesso a todos, removendo barreiras que possam impedir um usuário de acessar o sistema.</dica>
+                    <palavra>ACESSIBILIDADE</palavra>
+                </questao>
+                <questao concluida="sim">
+                    <dica>Qualquer “coisa” que significa algo para alguém em determinada circunstância.</dica>
+                    <palavra>SIGNO</palavra>
+                </questao>
+                <questao concluida="sim">
+                    <dica>Uma narrativa textual de uma situação de uso da aplicação.</dica>
+                    <palavra>CENÁRIOS</palavra>
+                </questao>
+                <questao concluida="sim">
+                    <dica>Como é chamado o método de investigação que permite coletar rapidamente dados de muitos usuários?</dica>
+                    <palavra>QUESTIONARIO</palavra>
+                </questao>
+                <questao concluida="sim">
+                    <dica>Um personagem fictício, modelo hipotético de um grupo de usuários reais.</dica>
+                    <palavra>PERSONA</palavra>
+                </questao>
+                <questao concluida="sim">
+                    <dica>Palavra chave na heurística que trata de feedback para o usuário.</dica>
+                    <palavra>VISIBILIDADE</palavra>
+                </questao>
+                <questao concluida="nao">
+                    <dica>Palavra chave na heurística que fala sobre o usuário não precisar se lembrar de objetos ou ações do sistema.</dica>
+                    <palavra>RECONHECIMENTO</palavra>
+                </questao>
+            </tentativa>
+        </tentativas>
+    </acesso>
 </acessos>

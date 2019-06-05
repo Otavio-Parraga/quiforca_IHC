@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<usuarios nmrDeUsuarios="1">
-<usuario id="18273846" nome="Anderson Leonardo" nmrDeAcessos="1">
+<usuarios nmrDeUsuarios="5">
+    <usuario id="18273846" nome="Anderson Leonardo" nmrDeAcessos="7">
+    </usuario>
+    <usuario id="17104935" nome="Otavio Parraga" nmrDeAcessos="9">
+    </usuario>
+<usuario id="19827387" nome="João Kleber" nmrDeAcessos="2">
+</usuario><usuario id="19289839" nome="João Kleber" nmrDeAcessos="1">
+</usuario><usuario id="17104878" nome="Otavio Parraga" nmrDeAcessos="1">
 </usuario></usuarios>
