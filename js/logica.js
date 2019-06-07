@@ -452,14 +452,13 @@ function addTentativa() {
 }
 
 function rightQuestion() {
+	console.log("Aqui vai, vamo ver onde vai esse problema ai");
 	$.ajax({
 		url: "../php/setRightQuestion.php",
 		type: "POST",
 		data: "",
 		success: function (data) {
 			console.log(data);
-		}, error: function (XMLHttpRequest, textStatus, errorThrown) {
-			console.log(textStatus, errorThrown)
 		}
 	})
 }

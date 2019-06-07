@@ -15,7 +15,7 @@
 	<script src="js/logica.js" defer class="object"></script>
 	<script src="js/controle.js" defer class="object"></script>
 	<script src="js/rest.js" defer class="object"></script>
-	<script src="stats.js" defer class="object"></script>
+	<!-- <script src="stats.js" defer class="object"></script> -->
 	<script>
 		window.sended = 0;
 		window.trials = "";
